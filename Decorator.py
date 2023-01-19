@@ -2,11 +2,13 @@ from datetime import datetime
 import time
 
 def times(lead_time):
+    def wrapper:
      start = time.time()
      lead_time()
      end = time.time() - start
      print(end)
-
+    return wrapper
+     
 
 @times
 def number():
